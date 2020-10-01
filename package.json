@@ -1,0 +1,22 @@
+{
+  "name": "404-page-not-found",
+  "version": "1.0.0",
+  "description": "404 page not found by DevChallenge.io",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedehub93/404-page-not-found.git"
+  },
+  "author": "Federico Verrengia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedehub93/404-page-not-found/issues"
+  },
+  "homepage": "https://github.com/fedehub93/404-page-not-found#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
