@@ -13,11 +13,20 @@ body {
   color: #4f4f4f;
   line-height: 1.4; }
 
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -1px; }
+
 .u-margin-bottom-small {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 6rem !important; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 *,
 *::before,
@@ -29,6 +38,12 @@ body {
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 56.5%; } }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 45%; } }
 
 .header {
   padding: 2rem 0 0 6rem;
@@ -36,17 +51,37 @@ html {
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -.2rem; }
+  letter-spacing: -.2rem;
+  margin-bottom: 8rem; }
+  @media only screen and (max-width: 1000px) {
+    .header {
+      margin-bottom: 2rem; } }
 
 .wrapper {
   max-width: 120rem;
   padding: 7rem 0;
   margin: 0 auto;
   display: flex; }
+  @media only screen and (max-width: 1000px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center; } }
 
 .img-box {
   width: 50%;
+  min-width: 50rem;
   margin-right: 5rem; }
+  @media only screen and (max-width: 1000px) {
+    .img-box {
+      margin-right: 0;
+      margin-bottom: 6rem; } }
+  @media only screen and (max-width: 100px) {
+    .img-box {
+      width: 75%;
+      min-width: 40rem; } }
+  @media only screen and (max-width: 600px) {
+    .img-box {
+      width: 90%; } }
 
 .img-scarecrow {
   width: 100%;
@@ -55,6 +90,17 @@ html {
 .detail-box {
   padding: 0 2rem;
   width: 50%; }
+  @media only screen and (max-width: 1000px) {
+    .detail-box {
+      width: 75%; } }
+  @media only screen and (max-width: 600px) {
+    .detail-box {
+      width: 90%; } }
+
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 3rem; }
 
 .btn:link,
 .btn:visited {
@@ -68,16 +114,14 @@ html {
   position: relative;
   display: inline-block; }
 
-.btn:link::before,
-.btn:visited::before {
+.btn:link::after,
+.btn:visited::after {
   content: "";
   position: absolute;
-  top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #eee;
-  display: inline-block; }
+  top: 0;
+  width: 20%;
+  height: 10rem; }
 
 .btn--black:link,
 .btn--black:visited {

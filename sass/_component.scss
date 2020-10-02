@@ -13,16 +13,14 @@
     display: inline-block;
 }
 
-.btn:link::before,
-.btn:visited::before {
+.btn:link::after,
+.btn:visited::after {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #eee;
-    display: inline-block;
+    top:0;
+    width: 20%;
+    height: 10rem;
 }
 
 .btn--black:link,
