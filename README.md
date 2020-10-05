@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://fedehub93.github.io/404-page-not-found/preview-404.png)
+![screenshot]<img src="https://fedehub93.github.io/404-page-not-found/preview-404.png" alt="image preview">
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
